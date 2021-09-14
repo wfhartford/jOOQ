@@ -2021,7 +2021,7 @@ extends
      * This translates to
      * <code>this ilike ('%' || escape(value, '\') || '%') escape '\'</code> in
      * {@link SQLDialect#POSTGRES}, or to
-     * <code>lower(this) not like lower(('%' || escape(value, '\') || '%') escape '\')</code>
+     * <code>lower(this) like lower(('%' || escape(value, '\') || '%') escape '\')</code>
      * in all other dialects.
      * </p>
      *
